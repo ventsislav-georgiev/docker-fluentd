@@ -12,7 +12,7 @@ RUN sudo gem install fluent-plugin-kafka \
 
 RUN sudo gem install fluent-plugin-elasticsearch \
   && sudo gem install fluent-plugin-s3 \
-  && sudo gem install fluent-plugin-splunk-enterprise
+  && sudo gem install fluent-plugin-splunk-hec
 
 RUN sudo gem sources --clear-all \
   && apk del .build-deps \
