@@ -12,7 +12,8 @@ RUN sudo gem install fluent-plugin-kafka \
 
 RUN sudo gem install fluent-plugin-elasticsearch \
   && sudo gem install fluent-plugin-s3 \
-  && sudo gem install fluent-plugin-splunk-hec
+  && sudo gem install fluent-plugin-splunk-hec \
+  && gem uninstall tzinfo -v 2.0.2
 
 RUN sudo gem sources --clear-all \
   && apk del .build-deps \
